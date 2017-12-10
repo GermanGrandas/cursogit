@@ -10,13 +10,26 @@
                 max-width: 100%;
                 vertical-align: top;
             }
+            img#Responsive{
+                    display : none;
+                }
+            @media screen and (max-width: 768px) {
+                img#Responsive{
+                    display : block;
+                }
+                img:not(#Responsive){
+                    display : none;
+                }
+            }
         </style>
     </head>
     <body>
+        <img src="IR.png" alt="" id="Responsive">
         <img src="./images/header.jpg" alt="">
         <img src="./images/hero.jpg" alt="">
         <img src="./images/Acustica.jpg" alt="">
         <img src="./images/clasica.jpg" alt="">
         <img src="./images/footer.jpg" alt="">
+        
     </body>
 </html>
